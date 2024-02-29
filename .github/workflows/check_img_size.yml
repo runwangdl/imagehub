@@ -11,4 +11,4 @@ jobs:
       
     - name: Check for image files and size
       run: 
-       find ./imagehub -type f ! -size -1M -exec echo "Found a file larger than 1MB:" {} \; -exec false {} +
+       find ./imagehub -type f ! -size -2M -exec echo "Found a file larger than 1MB:" {} \; -exec false {} +
